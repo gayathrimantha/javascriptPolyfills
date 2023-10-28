@@ -6,10 +6,10 @@ Array.prototype.myMap = function(callback) {
   let returnArray = [];
   //Applying the callback logic to each item
   for(let i=0; i<this.length;i++){
-    if(callback){
+    
       returnArray.push(callback(this[i]))
     }
-  }
+  
   //returning the array
   return returnArray;
 }
